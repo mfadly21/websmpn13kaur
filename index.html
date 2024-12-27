@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil SMP Negeri 13 Kaur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>SMP Negeri 13 Kaur</h1>
+        <p>Akreditasi B</p>
+        <p>Membangun Generasi Unggul dan Berprestasi</p>
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><button onclick="showSlide('Profil_Sekolah')">Profil Sekolah</button></li>
+            <li><button onclick="showSlide('visi-misi')">Visi & Misi</button></li>
+            <li><button onclick="showSlide('Kegiatan_Siswa')">Kegiatan Siswa</button></li>
+            <li><button onclick="showSlide('kontak')">Kontak</button></li>
+        </ul>
+    </nav>
+
+    <section id="Profil_Sekolah" class="slide active">
+        <h2>Profil Sekolah</h2>
+        <p style="text-align: justify;">
+            SMPN 13 Kaur yang terletak di Desa Padang Panjang, Kecamatan Semidang Gumay, Kabupaten Kaur, Provinsi Bengkulu merupakan sekolah negeri yang telah berdiri sejak tahun 1998. Sekolah ini memiliki visi untuk mewujudkan peserta didik yang beriman, berilmu, dan berprestasi. Sekolah ini terakreditasi B yang diperoleh pada tanggal 19 November 2017 dengan nomor sertifikat 532/BAP-SM/KP/XI/2017, menandakan kualitas pendidikan yang baik dan terstandarisasi.
+        </p>
+        <img src="Foto 1.jpg" alt="Profil Sekolah">
+    </section>    
+
+    <!-- Slide: Visi & Misi -->
+    <section id="visi-misi" class="slide">
+        <h2>Visi & Misi</h2>
+        <h3>Visi</h3>
+        <p>Mewujudkan peserta didik yang beriman, berilmu, dan berprestasi.</p>
+        <h3>Misi</h3>
+        <ul>
+            <li>Menanamkan nilai moral dan keagamaan.</li>
+            <li>Mengembangkan potensi akademik dan non-akademik.</li>
+            <li>Melengkapi sarana pembelajaran modern.</li>
+        </ul>
+    </section>
+
+    <!-- Slide: Kegiatan Siswa -->
+    <section id="Kegiatan_Siswa" class="slide">
+        <h2>Kegiatan Siswa</h2>
+        <p>Berikut adalah dokumentasi berbagai kegiatan siswa di SMP Negeri 13 Kaur:</p>
+        <div class="kegiatan-siswa">
+            <div class="foto-grid">
+                <!-- Foto dengan overlay teks -->
+                <div class="foto-container">
+                    <img src="Foto 2.jpg" alt="Kegiatan Siswa/i 1" onclick="toggleOverlay(this, 'Kegiatan Siswa/Siswi Pramuka')">
+                    <div class="overlay">Kegiatan Siswa/Siswi Pramuka</div>
+                </div>
+                <div class="foto-container">
+                    <img src="Foto 3.jpg" alt="Kegiatan Siswa/i 2" onclick="toggleOverlay(this, 'Kegiatan Siswa/Siswi Di Kelas')">
+                    <div class="overlay">Kegiatan Siswa/Siswi Di Kelas</div>
+                </div>
+                <div class="foto-container">
+                    <img src="Foto 4.jpg" alt="Kegiatan Siswa/i 3" onclick="toggleOverlay(this, 'Kegiatan Siswa/Siswi Pramuka')">
+                    <div class="overlay">Kegiatan Siswa/Siswi Pramuka</div>
+                </div>
+                <div class="foto-container">
+                    <img src="Foto 5.jpg" alt="Kegiatan Siswa/i 4" onclick="toggleOverlay(this, 'Kegiatan Siswa Futsal')">
+                    <div class="overlay">Kegiatan Siswa Lomba Futsal</div>
+                </div>
+                <div class="foto-container">
+                    <img src="Foto 6.jpg" alt="Kegiatan Siswa/i 5" onclick="toggleOverlay(this, 'Kegiatan Siswi Nari ')">
+                    <div class="overlay">Kegiatan Siswi Nari</div>
+                </div>
+                <div class="foto-container">
+                    <img src="Foto 7.jpg" alt="Kegiatan Siswa/i 6" onclick="toggleOverlay(this, 'Kegiatan Siswi Bola Voli')">
+                    <div class="overlay">Kegiatan Siswi Lomba Bola Voli</div>
+                </div>
+                <div class="foto-container">
+                    <img src="Foto 8.jpg" alt="Kegiatan Siswa/i 7" onclick="toggleOverlay(this, 'Kegiatan Siswa Sepak Bola')">
+                    <div class="overlay">Kegiatan Siswa Sepak Bola</div>
+                </div>
+                <div class="foto-container">
+                    <img src="Foto 9.jpg" alt="Kegiatan Siswa/i 8" onclick="toggleOverlay(this, 'Kegiatan Siswa Karate')">
+                    <div class="overlay">Kegiatan Siswa Karate</div> 
+                </div>
+                <div class="foto-container">
+                    <img src="Foto 10.jpg" alt="Kegiatan Siswa/i 9" onclick="toggleOverlay(this, 'Kegiatan Siswa/Siswi Pramuka')">
+                    <div class="overlay">Kegiatan Siswa/Siswi Pramuka</div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide: Kontak -->
+    <section id="kontak" class="slide">
+        <h2>Kontak Kami</h2>
+        <p>Alamat: Jalan Awat Mata, Desa Padang Panjang, Kecamatan Kaur, Kabupaten Kaur, Provinsi Bengkulu</p>
+        <p>Email: smpn1semidanggumay@yahoo.id</p>
+        <p>Telepon: -</p>
+        <p>NPSN: 10701801</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 SMP Negeri 13 Kaur. Muhammad Fadly Pamungkas</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
